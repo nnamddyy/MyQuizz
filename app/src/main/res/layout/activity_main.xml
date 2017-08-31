@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="14dp"
+    android:orientation="vertical"
+    tools:context="com.example.nd.myquizz.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/quiz_name"
+    android:text="FULL NAME"
+android:textStyle="italic"
+    android:textColor="#000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1. What is the name of Niger State Governor"
+                android:id="@+id/question1" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/abubakar_bello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abubakar Bello"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/bello_mustapha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bello Mustapha"
+                    android:onClick="onRadioButtonClicked"/>
+                            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. What is the full meaning APC?"
+                android:id="@+id/question2" />
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RadioButton android:id="@+id/all_progressive_congress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Progressive Congress"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/all_people_council"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All People Council"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. In which year was Niger State created?"
+                android:id="@+id/nigerstatecreation" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/year_1973"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1973"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/year_1970"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1970"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/year_1976"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1976"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. What is the capital of Niger State?"
+                android:id="@+id/question4" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/bida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bida"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/sulja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suleja"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/minna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minna"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. How many LGAs can be found in Niger State?"
+                android:id="@+id/question5" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/lga_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/lga_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/lga_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Which of these is not a major tribe in Niger State?"
+                android:id="@+id/question6" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/nupe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nupe"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/ebira"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ebira"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Which of these is not a major farm produce in Niger State?"
+                android:id="@+id/question7" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rice"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/palm_fruit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="palm fruit"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. What is Gwape International?"
+                android:id="@+id/question8" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/children_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Children Group"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/dance_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dance Group"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9. What is Gbagyi?"
+                android:id="@+id/question9" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/tribe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tribe"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Answers"
+                android:onClick="submit"
+                android:id="@+id/button" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
